@@ -1,16 +1,90 @@
-# React + Vite
+# AI Recipe Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React Recipe Finder application built with React and the TheMealDB public API.
 
-Currently, two official plugins are available:
+## Live Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Search recipes by name
+- Recipe cards with images
+- Recipe category and cuisine information
+- Detailed recipe view
+- Ingredients list
+- Cooking instructions
+- Loading state
+- Error handling
+- Empty-search validation
+- No-results handling
+- Responsive desktop and mobile layout
 
-## React Compiler
+## Technology
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- TheMealDB API
 
-## Expanding the ESLint configuration
+## AI-Assisted Development
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+AI was used as a development assistant during this project.
+
+The initial development prompt used with Gemini CLI was:
+
+> I need to build a standalone React Recipe Finder application for a frontend internship assignment.
+>
+> First, inspect the existing Vite React codebase and explain its current structure briefly.
+>
+> Then plan and implement a polished Recipe Finder app using React and TheMealDB public API.
+>
+> Requirements:
+> - Search recipes by name.
+> - Show recipe cards with image, recipe name, category and cuisine/area.
+> - Show loading, error and no-results states.
+> - Clicking a recipe should show its ingredients and cooking instructions.
+> - Make the UI responsive for desktop and mobile.
+> - Use clean, modern CSS with an attractive food-focused design.
+> - Use React components and reusable code.
+> - Use the existing Vite + React setup.
+> - Do not add a backend.
+> - Do not add unnecessary libraries unless genuinely required.
+> - Handle API failures gracefully.
+>
+> Workflow:
+> 1. Inspect the project.
+> 2. Explain the implementation plan.
+> 3. Implement the application.
+> 4. Run the app/build and check for errors.
+> 5. Fix any errors found.
+> 6. Summarize the changes.
+
+Gemini CLI reached its daily model quota during the inspection phase, so the remaining implementation was completed manually while following the planned requirements.
+
+## Manual Improvements and Corrections
+
+After reviewing and testing the application, I manually implemented and verified the following:
+
+- Added the TheMealDB API integration.
+- Added recipe search functionality.
+- Added loading and error states.
+- Added empty-search validation.
+- Added a clear no-results message.
+- Added recipe detail view with ingredients and instructions.
+- Added responsive CSS for desktop and mobile screens.
+- Added accessible labels and button states.
+- Tested API search with real recipes.
+- Tested empty search input.
+- Tested a search with no matching results.
+- Ran a production build successfully with `npm run build`.
+
+## API
+
+This project uses the free public TheMealDB API:
+
+https://www.themealdb.com/
+
+## Running Locally
+
+Install dependencies:
+
+```bash
+npm install
